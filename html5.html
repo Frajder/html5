@@ -28,31 +28,48 @@
     <section id="lesson1">
         <h2>Lesson 1: HTML5 Semantic Elements</h2>
         <p>Introduction to semantic markup including <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, and <code>&lt;article&gt;</code>.</p>
+        <pre><code>&lt;header&gt;Header Content&lt;/header&gt;\n&lt;footer&gt;Footer Content&lt;/footer&gt;</code></pre>
     </section>
 
     <section id="lesson2">
         <h2>Lesson 2: HTML5 Form Enhancements</h2>
         <p>Exploring new form capabilities in HTML5 such as new input types <code>email</code> and <code>date</code>.</p>
+        <pre><code>&lt;input type="email" placeholder="Enter your email"&gt;\n&lt;input type="date"&gt;</code></pre>
     </section>
 
     <section id="lesson3">
         <h2>Lesson 3: Multimedia Handling in HTML5</h2>
         <p>Embedding video and audio in web pages using HTML5's multimedia elements.</p>
+        <pre><code>&lt;video src="video.mp4" controls&gt;&lt;/video&gt;\n&lt;audio src="audio.mp3" controls&gt;&lt;/audio&gt;</code></pre>
     </section>
 
     <section id="lesson4">
         <h2>Lesson 4: Advanced Event Handling</h2>
         <p>Detailed JavaScript integration for handling user interactions with HTML5.</p>
+        <pre><code>&lt;button onclick="alert('Hello World!')"&gt;Click me!&lt;/button&gt;</code></pre>
+        <button onclick="displayMessage()">Click me!</button>
+        <script>
+            function displayMessage() {
+                alert('Hello World!');
+            }
+        </script>
     </section>
 
     <section id="lesson5">
         <h2>Lesson 5: Custom Multimedia Controls</h2>
         <p>Creating and styling custom controls for multimedia content to enhance interactivity and user experience.</p>
+        <pre><code>&lt;video id="myVideo" src="video.mp4"&gt;&lt;/video&gt;\n&lt;button onclick="document.getElementById('myVideo').play()"&gt;Play&lt;/button&gt;\n&lt;button onclick="document.getElementById('myVideo').pause()"&gt;Pause&lt;/button&gt;</code></pre>
+        <video id="myVideo" controls>
+            <source src="media/AZNFARMER.mp4" type="video/mp4">
+            <source src="media/AZNFARMER.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>        
     </section>
 
     <section id="lesson6">
         <h2>Lesson 6: Integrating CSS with HTML5</h2>
         <p>Applying CSS to HTML structures to improve layout, design responsiveness, and interactivity.</p>
+        <pre><code>.container {\n  display: flex;\n  justify-content: space-around;\n}\n.nav-item {\n  padding: 10px;\n  background-color: #eee;\n}</code></pre>
     </section>
 
     <aside>
