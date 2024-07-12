@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/responsive.css">
-    
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/motion-blur.css">
+    <script>
+        function displayMessage(message) {
+            alert(message);
+        }
+    </script>
 </head>
 <body>
     <header id="top" class="main-header">
@@ -22,18 +28,19 @@
             <li><a href="#lesson4">Lesson 4</a></li>
             <li><a href="#lesson5">Lesson 5</a></li>
             <li><a href="#lesson6">Lesson 6</a></li>
+            <li><a href="#lesson7">Lesson 7</a></li>
         </ul>
     </nav>
 
     <section id="lesson1">
         <h2>Lesson 1: HTML5 Semantic Elements</h2>
-        <p>Introduction to semantic markup including <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, and <code>&lt;article&gt;</code>.</p>
+        <p>Introduction to semantic markup including &lt;header&gt;, &lt;footer&gt;, and &lt;article&gt;.</p>
         <pre><code>&lt;header&gt;Header Content&lt;/header&gt;\n&lt;footer&gt;Footer Content&lt;/footer&gt;</code></pre>
     </section>
 
     <section id="lesson2">
         <h2>Lesson 2: HTML5 Form Enhancements</h2>
-        <p>Exploring new form capabilities in HTML5 such as new input types <code>email</code> and <code>date</code>.</p>
+        <p>Exploring new form capabilities in HTML5 such as new input types email and date.</p>
         <pre><code>&lt;input type="email" placeholder="Enter your email"&gt;\n&lt;input type="date"&gt;</code></pre>
         <a href="#top">Back to Top</a>
     </section>
@@ -48,34 +55,58 @@
     <section id="lesson4">
         <h2>Lesson 4: Advanced Event Handling</h2>
         <p>Detailed JavaScript integration for handling user interactions with HTML5.</p>
-        <pre><code>&lt;button onclick="alert('Hello World!')"&gt;Click me!&lt;/button&gt;</code></pre>
-        <button onclick="displayMessage()">Click me!</button>
-        <script>
-            function displayMessage() {
-                alert('Hello World!');
-            }
-        </script>
+        <button onclick="displayMessage('Hello World!')">Click me!</button>
         <a href="#top">Back to Top</a>
     </section>
 
     <section id="lesson5">
         <h2>Lesson 5: Custom Multimedia Controls</h2>
         <p>Creating and styling custom controls for multimedia content to enhance interactivity and user experience.</p>
-        <pre><code>&lt;video id="myVideo" src="video.mp4"&gt;&lt;/video&gt;\n&lt;button onclick="document.getElementById('myVideo').play()"&gt;Play&lt;/button&gt;\n&lt;button onclick="document.getElementById('myVideo').pause()"&gt;Pause&lt;/button&gt;</code></pre>
-        <video id="myVideo" controls>
+        <video id="myVideo" controls aria-label="Educational Video">
             <source src="media/AZNFARMER.mp4" type="video/mp4">
-            <source src="media/AZNFARMER.webm" type="video/webm">
+            <track kind="captions" src="captions_en.vtt" srclang="en" label="English captions">
             Your browser does not support the video tag.
-        </video>      
+        </video>
+        <button onclick="document.getElementById('myVideo').play()">Play</button>
+        <button onclick="document.getElementById('myVideo').pause()">Pause</button>
         <a href="#top">Back to Top</a>  
     </section>
 
     <section id="lesson6">
-        <h2>Lesson 6: Integrating CSS with HTML5</h2>
+        <h2>Lesson 6: HTML5 Advanced Event Handling</h2>
         <p>Applying CSS to HTML structures to improve layout, design responsiveness, and interactivity.</p>
-        <pre><code>.container {\n  display: flex;\n  justify-content: space-around;\n}\n.nav-item {\n  padding: 10px;\n  background-color: #eee;\n}</code></pre>
+        <pre><code>.container {
+    display: flex;
+    justify-content: space-around;
+}\n.nav-item {
+    padding: 10px;
+    background-color: #eee;
+}</code></pre>
         <a href="#top">Back to Top</a>
     </section>
+
+    <section id="lesson7">
+        <h2>Lesson 7: Integrating CSS with HTML5</h2>
+        <p>Applying CSS to HTML structures to improve layout, design responsiveness, and interactivity.</p>
+        <pre><code>.container {
+    display: flex;
+    justify-content: space-around;
+}\n.nav-item {
+    padding: 10px;
+    background-color: #eee;
+}</code></pre>
+        <a href="#top">Back to Top</a>
+    </section>
+
+    <form class="styled-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <button type="submit" class="button-blur">Submit</button> <!-- Applied motion blur class -->
+    </form>
 
     <aside>
         <h2>Additional Resources</h2>

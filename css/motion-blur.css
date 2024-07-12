@@ -1,0 +1,37 @@
+/* 
+motion-blur.css 
+*/
+
+/* 
+General settings for the animation container 
+*/
+
+.blur-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevents overflow during movement */
+    position: relative; /* Ensures the element is positioned correctly */
+    height: 100vh; /* Adjust height as needed */
+}
+
+/* Apply this class to the element you want to animate with a blur effect */
+.blur-motion {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    background-color: red; /* Example background, change as needed */
+    position: relative;
+    animation: blurMove 4s infinite; /* Adjust timing and repetition as needed */
+}
+
+/* Keyframes to animate the element with blur effect */
+@keyframes blurMove {
+    0%, 100% {
+        transform: translateX(0); /* Starting and ending at the same position */
+        filter: blur(0); /* No blur at start and end */
+    }
+    50% {
+        transform: translateX(300px); /* Move 300px to the right */
+        filter: blur(8px); /* Maximum blur in the middle of the movement */
+    }
+}
