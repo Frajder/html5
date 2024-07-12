@@ -1,6 +1,6 @@
 # HTML5 Crash Course
 
-Welcome to the HTML5 Crash Course! This series of lessons will guide you through the fundamentals and advanced features of HTML5, enabling you to create powerful, efficient, and modern web applications. The [html5](https://github.com/klllj0ylife/html5) course is led by the awesome Kit Baroness a.k.a. @klllj0ylife
+Welcome to the HTML5 Crash Course! This series of lessons will guide you through the fundamentals and advanced features of HTML5, enabling you to create powerful, efficient, and modern web applications. The [html5](https://github.com/klllj0ylife/html5) course is led by the awesome Kit Baroness a.k.a. [@klllj0ylife](https://github.com/klllj0ylife)
 
 ## Course Overview
 
@@ -8,7 +8,7 @@ The course is divided into several lessons, each focusing on a specific aspect o
 
 ### Master Index
 
-1. [Introduction to HTML5](./Intro/README.md) - 2024-05-22 00-56-00.mkv
+1. [Introduction to HTML5](./Intro/README.md)
    - Overview of HTML5 and its key components.
    - Why this course was created.
    - 📋 Checklist:
@@ -89,11 +89,12 @@ The course is divided into several lessons, each focusing on a specific aspect o
 
 ## Projects and Assignments for Course Participants
 
-[SexySemantic](https://github.com/Frajder/SexySemantic) by @Frajder
+[SexySemantic](https://github.com/Frajder/SexySemantic) by [@Frajder](https://github.com/Frajder)
 
 ## Additional Resources
 
 - [HTML5 Crash Course - Notes, Code snippets and examples](https://gist.github.com/Frajder/3b546b5bf5a1b4c3abebeace8946d8b5)
+- [Upstram repositorie](https://github.com/klllj0ylife/html5)
 - [HTML5 Multimedia Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video)
 - [Using Audio and Video in HTML](https://www.w3schools.com/html/html5_video.asp)
 - [CSS Tricks - A Guide to CSS Animation](https://css-tricks.com/almanac/properties/a/animation/)
