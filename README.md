@@ -93,6 +93,7 @@ The course is divided into several lessons, each focusing on a specific aspect o
 
 ## Additional Resources
 
+- [HTML5 Crash Course - Notes, Code snippets and examples](https://gist.github.com/Frajder/3b546b5bf5a1b4c3abebeace8946d8b5)
 - [HTML5 Multimedia Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video)
 - [Using Audio and Video in HTML](https://www.w3schools.com/html/html5_video.asp)
 - [CSS Tricks - A Guide to CSS Animation](https://css-tricks.com/almanac/properties/a/animation/)
