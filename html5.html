@@ -13,14 +13,14 @@
     <link rel="stylesheet" href="css/hover.css">   
 </head>
 <body>
-    <script src="js/hover.js"></script>
-    <script src="js/clickme.js"></script>
+    <script src="js/hover.js async"></script>
+    <script src="js/clickme.js" defer></script>
 
     <header id="top" class="main-header">
         <h1>Welcome to My Complete HTML5 and CSS Course</h1>
         <p>Learn everything from basic HTML to advanced CSS with practical examples.</p>
     </header>
-    
+
     <nav class="main-nav">
         <ul>
             <li><a href="#lesson1">Lesson 1</a></li>
@@ -37,7 +37,7 @@
         <h2>Lesson 1: HTML5 Semantic Elements</h2>
         <p>Introduction to semantic markup including &lt;header&gt;, &lt;footer&gt;, and &lt;article&gt;.</p>
         <pre><code>&lt;header&gt;Header Content&lt;/header&gt;\n&lt;footer&gt;Footer Content&lt;/footer&gt;</code></pre>
-        <button onclick="displayMessage()">Welcome Message</button>
+        <button onclick="displayMessage('I am the Baroness!!!')">Welcome Message</button>
         <a href="#top">Back to Top</a>
     </section>
 
