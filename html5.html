@@ -9,17 +9,18 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/motion-blur.css">
-    <script>
-        function displayMessage(message) {
-            alert(message);
-        }
-    </script>
+    <link rel="stylesheet" href="css/back-to-top.css">
+    <link rel="stylesheet" href="css/hover.css">   
 </head>
 <body>
+    <script src="js/hover.js async"></script> <!-- Use async for scripts that operate independently of the DOM or other scripts. -->
+    <script src="js/clickme.js" defer></script> <!-- Use defer for scripts that need to interact with the DOM or rely on the entire HTML being parsed. -->
+
     <header id="top" class="main-header">
         <h1>Welcome to My Complete HTML5 and CSS Course</h1>
         <p>Learn everything from basic HTML to advanced CSS with practical examples.</p>
     </header>
+
     <nav class="main-nav">
         <ul>
             <li><a href="#lesson1">Lesson 1</a></li>
@@ -36,19 +37,34 @@
         <h2>Lesson 1: HTML5 Semantic Elements</h2>
         <p>Introduction to semantic markup including &lt;header&gt;, &lt;footer&gt;, and &lt;article&gt;.</p>
         <pre><code>&lt;header&gt;Header Content&lt;/header&gt;\n&lt;footer&gt;Footer Content&lt;/footer&gt;</code></pre>
+        <button onclick="displayMessage('I am the Baroness!!!')">Welcome Message</button>
+        <a href="#top">Back to Top</a>
     </section>
 
     <section id="lesson2">
         <h2>Lesson 2: HTML5 Form Enhancements</h2>
         <p>Exploring new form capabilities in HTML5 such as new input types email and date.</p>
         <pre><code>&lt;input type="email" placeholder="Enter your email"&gt;\n&lt;input type="date"&gt;</code></pre>
-        <a href="#top">Back to Top</a>
-    </section>
+        <div>
+            <form class="styled-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <button type="submit" class="button-blur">Submit</button> <!-- Applied motion blur class -->
+            </form>
+        </div>
+    
+            <a href="#top" id="back-to-top">Back to Top</a> <!--Applied Back-to-top class-->
+        </section>
 
     <section id="lesson3">
         <h2>Lesson 3: Multimedia Handling in HTML5</h2>
         <p>Embedding video and audio in web pages using HTML5's multimedia elements.</p>
         <pre><code>&lt;video src="video.mp4" controls&gt;&lt;/video&gt;\n&lt;audio src="audio.mp3" controls&gt;&lt;/audio&gt;</code></pre>
+        <input type="text" onkeydown="alert('Key pressed!')" placeholder="Press any key..."> <!---->
         <a href="#top">Back to Top</a>
     </section>
 
@@ -58,7 +74,7 @@
         <button onclick="displayMessage('Hello World!')">Click me!</button>
         <a href="#top">Back to Top</a>
     </section>
-
+    
     <section id="lesson5">
         <h2>Lesson 5: Custom Multimedia Controls</h2>
         <p>Creating and styling custom controls for multimedia content to enhance interactivity and user experience.</p>
@@ -81,7 +97,8 @@
 }\n.nav-item {
     padding: 10px;
     background-color: #eee;
-}</code></pre>
+}</code></pre>    
+
         <a href="#top">Back to Top</a>
     </section>
 
@@ -95,18 +112,11 @@
     padding: 10px;
     background-color: #eee;
 }</code></pre>
-        <a href="#top">Back to Top</a>
+<div class="hover-box" onmouseover="changeColor(this, 'yellow')" onmouseout="changeColor(this, 'white')"> <!-- hover.css interaction -->
+    Hover over me!
+</div>    
+<a href="#top" id="back-to-top" aria-label="Back to top of the page">Back to Top</a> <!-- adding accessibility-->
     </section>
-
-    <form class="styled-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password">
-        <button type="submit" class="button-blur">Submit</button> <!-- Applied motion blur class -->
-    </form>
 
     <aside>
         <h2>Additional Resources</h2>
