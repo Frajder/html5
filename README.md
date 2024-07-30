@@ -71,6 +71,7 @@ The course is divided into several lessons, each focusing on a specific aspect o
    - 📋 Checklist:
      - Build a web page with a registration form and multimedia content.
      - Style the page with CSS.
+     - Adding registrationForm to verify email string using javascript [email-verify.js](Lesson8/js/email-verify.js)
 
 10. [Lesson 9: Creating an Image Map for Navigation in HTML5](./Lesson9/README.md)
     - Creating image maps for navigation.
@@ -91,9 +92,8 @@ The course is divided into several lessons, each focusing on a specific aspect o
 
 [https://github.com/Coast2888/thisIsMeSharing](https://github.com/Coast2888/thisIsMeSharing) by @Coast2888
 [https://github.com/42Jim/html-project](https://github.com/42Jim/html-project) by @42Jim
+[https://github.com/omacox/HTML_Class_Homework](https://github.com/omacox/HTML_Class_Homework) by @omacox
 
-
-[SexySemantic](https://github.com/Frajder/SexySemantic) by [@Frajder](https://github.com/Frajder)
 
 ## Additional Resources
 
