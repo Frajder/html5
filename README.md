@@ -91,7 +91,9 @@ The course is divided into several lessons, each focusing on a specific aspect o
 ## Projects and Assignments for Course Participants
 
 [https://github.com/Coast2888/thisIsMeSharing](https://github.com/Coast2888/thisIsMeSharing) by @Coast2888
+
 [https://github.com/42Jim/html-project](https://github.com/42Jim/html-project) by @42Jim
+
 [https://github.com/omacox/HTML_Class_Homework](https://github.com/omacox/HTML_Class_Homework) by @omacox
 
 
