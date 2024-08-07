@@ -1,5 +1,46 @@
 # HTML5 and JavaScript Best Practices
 
+The best practices for **[HTML5](#html5-best-practices)** and **[JavaScript](#javascript-best-practices)**, essential knowledge for web developers aiming to create efficient, maintainable, and high-quality web applications. The document covers a wide range of HTML5 best practices, from fundamental aspects like properly declaring document types and using correct syntax, to more advanced topics such as optimizing image attributes, managing viewport settings, and effectively integrating JavaScript within HTML. It also explores crucial JavaScript best practices, including coding conventions, naming standards, and formatting rules that enhance code readability and consistency. By adhering to these guidelines, developers can improve their code's performance, accessibility, and cross-browser compatibility, ultimately leading to more robust and professional web development projects.
+
+## Table of Contents
+
+**[HTML5 Best Practices](#html5-best-practices)**
+
+* [1. Always Declare Document Type](#1-always-declare-document-type)
+* [2. Use Lowercase Element Names](#2-use-lowercase-element-names)
+* [3. Close All HTML Elements](#3-close-all-html-elements)
+* [4. Use Lowercase Attribute Names](#4-use-lowercase-attribute-names)
+* [5. Always Quote Attribute Values](#5-always-quote-attribute-values)
+* [6. Always Specify alt, width, and height for Images](#6-always-specify-alt-width-and-height-for-images)
+  * [7. Spaces and Equal Signs](#7-spaces-and-equal-signs)
+* [8. Avoid Long Code Lines](#8-avoid-long-code-lines)
+* [9. Blank Lines and Indentation](#9-blank-lines-and-indentation)
+* [10. Never Skip the `<title>` Element](#10-never-skip-the-title-element)
+* [11. Always Add the `<html>` and `<body>` Tags](#11-always-add-the-html-and-body-tags)
+* [12. Add the lang Attribute](#12-add-the-lang-attribute)
+* [13. Meta Data](#13-meta-data)
+* [14. Setting The Viewport](#14-setting-the-viewport)
+* [15. HTML Comments](#15-html-comments)
+* [16. Using Style Sheets](#16-using-style-sheets)
+* [17. Loading JavaScript in HTML](#17-loading-javascript-in-html)
+* [18. Accessing HTML Elements with JavaScript](#18-accessing-html-elements-with-javascript)
+* [19. Use Lower Case File Names](#19-use-lower-case-file-names)
+* [20. File Extensions](#20-file-extensions)
+
+---
+
+**[JavaScript Best Practices](#javascript-best-practices)**
+
+* [Coding Conventions Overview](#coding-conventions-overview)
+* [Variable Names](#variable-names)
+* [Spaces Around Operators](#spaces-around-operators)
+* [Code Indentation](#code-indentation)
+* [Statement Rules](#statement-rules)
+* [Object Rules](#object-rules)
+* [Line Length](#line-length)
+* [Naming Conventions](#naming-conventions)
+* [File Extensions and Lower Case File Names](#file-extensions-and-lower-case-file-names)
+
 ## HTML5 Best Practices
 
 ### 1. Always Declare Document Type
