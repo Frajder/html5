@@ -1,0 +1,40 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust this value as needed */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-items {
+    position: relative;
+    width: 100%;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-item.active {
+    opacity: 1;
+    position: relative; /* This allows the container to adjust to the image height */
+}
+
+.carousel-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* This ensures the entire image is visible */
+}
+
+/* Optional: Add some padding around the carousel */
+body {
+    padding: 20px;
+    background-color: #f0f0f0;
+}

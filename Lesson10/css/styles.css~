@@ -1,0 +1,36 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the carousel */
+    overflow: hidden;
+}
+
+.carousel-items {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: opacity 0.5s ease;
+    position: absolute; /* Position items absolutely */
+    top: 0;
+    left: 0;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+}
+
+.carousel-item:not(.active) {
+    opacity: 0;
+    pointer-events: none; /* Prevent interaction with hidden items */
+}
+
+.active {
+    opacity: 1;
+    z-index: 1; /* Ensure active item is on top */
+}
